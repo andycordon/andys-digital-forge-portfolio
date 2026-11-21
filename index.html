@@ -11,20 +11,26 @@
         <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/>
+        <link rel="icon" type="image/png" href="img/logo.png">
         <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
+
+<!-- Header -> logo, menu, langues, shop link -->
         <header class="site-header">
             <div class="header-inner">
+                <!-- logo -->
                 <a aria-label="AndysDigitalForge home" class="brand" href="#top">
                     <img alt="AndysDigitalForge logo" class="brand-logo" src="img/logo.png"/>
                     <span>AndysDigitalForge</span>
                 </a>
+                <!-- bouton ouverture fermeture menu -->
                 <input aria-label="Open or close navigation" class="nav-toggle" id="nav-toggle" type="checkbox"/>
                 <label aria-hidden="true" class="nav-toggle-label" for="nav-toggle">
                     <span></span>
                     <span></span>
                 </label>
+                <!-- menu, lien vers ancre de la page -->
                 <nav aria-label="Main navigation" class="main-nav">
                     <a href="#collections">
                         <span class="lang-en" lang="en">My World</span>
@@ -47,6 +53,7 @@
                         <span class="lang-fr" lang="fr">Contact</span>
                     </a>
                 </nav>
+                <!-- selection de la langue (en/fr) -->
                 <div class="header-actions">
                     <div aria-label="Choose language" class="language-switch">
                         <input checked="" id="lang-en" name="language" type="radio"/>
@@ -58,99 +65,121 @@
                             <img alt="Fran&ccedil;ais" src="https://flagcdn.com/w20/fr.png"/>
                         </label>
                     </div>
+                    <!-- lien vers boutique Etsy -->
                     <a class="header-shop" href="https://www.etsy.com/shop/AndysDigitalForge" rel="noopener noreferrer" target="_blank">
                         <span class="lang-en" lang="en">Visit my shop</span>
                         <span class="lang-fr" lang="fr">Ma boutique</span>
                         <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
+                    </a></div>
             </div>
         </header>
-        <main id="main">
-                    
-                <!-- Présentation de base -->
+
+        <main id="main">            
+<!-- Accueil -> zone presentation -->
             <section aria-labelledby="hero-title" class="hero section-shell" id="top">
                 <div class="hero-copy">
-                    <p class="eyebrow"><span class="eyebrow-line"></span>
-                        <span class="lang-en" lang="en">Independent creator &middot; A mind full of ideas</span>
-                        <span class="lang-fr" lang="fr">Cr&eacute;ateur ind&eacute;pendant &middot; Des id&eacute;es plein la t&ecirc;te</span>
+                    <!-- mini texte d'intro -->
+                    <p class="eyebrow">
+                        <span class="eyebrow-line"></span>
+                        <span class="lang-en" lang="en">Independent creator · A mind full of ideas</span>
+                        <span class="lang-fr" lang="fr">Créateur indépendant · Des idées plein la tête</span>
                     </p>
+                    <!-- titre de presentation -->
                     <h1 id="hero-title">
                         <span class="lang-en" lang="en">A little world<br/>of my <em>own.</em></span>
-                        <span class="lang-fr" lang="fr">Un petit monde<br/><em>&agrave; moi.</em></span>
+                        <span class="lang-fr" lang="fr">Un petit monde<br/><em>à moi.</em></span>
                     </h1>
+                    <!-- textes de presentation -->
                     <p class="hero-intro">
-                        <span class="lang-en" lang="en">Ideas rarely arrive one at a time. A mood, a detail, a conversation or a passing thought can set off a whole chain of possibilities. I like seeing where they lead.</span>
-                        <span class="lang-fr" lang="fr">Les id&eacute;es arrivent rarement seules. Une humeur, un d&eacute;tail, une conversation ou une pens&eacute;e qui passe peut d&eacute;clencher tout un encha&icirc;nement d&rsquo;id&eacute;es. J'aime voir o&ugrave; tout cela me m&egrave;ne.</span></p>
-                </div>
+                        <span class="lang-en" lang="en">
+                            Ideas rarely arrive one at a time. A mood, a detail, a conversation or a passing thought can set off a whole chain of possibilities. I like seeing where they lead.
+                        </span>
+                        <span class="lang-fr" lang="fr">
+                            Les idées arrivent rarement seules. Une humeur, un détail, une conversation ou une pensée qui passe peut déclencher tout un enchaînement d’idées. J'aime voir où tout cela me mène.
+                        </span>
+                    </p>
+                    <!-- mini conclusion intro -->
                     <p class="hero-footnote">
                         <i aria-hidden="true" class="fa-regular fa-lightbulb"></i>
                         <span class="lang-en" lang="en">Curiosity, detours and a lot of imagination.</span>
-                        <span class="lang-fr" lang="fr">De la curiosit&eacute;, des d&eacute;tours et beaucoup d&rsquo;imagination.</span>
+                        <span class="lang-fr" lang="fr">De la curiosité, des détours et beaucoup d’imagination.</span>
                     </p>
                 </div>
                 <div aria-label="Artwork composition" class="hero-composition">
+                    <!-- grande image intro -->
                     <div class="hero-art art-large">
                         <img alt="Artwork preview from AndysDigitalForge" src="img/preview.png"/>
                     </div>
+                    <!-- moyenne image intro -->
                     <div class="hero-art art-small">
                         <img alt="A second artwork preview" src="img/preview.png"/>
                     </div>
+                    <!-- petite image intro -->
                     <div class="hero-art art-detail">
                         <img alt="Close-up artwork detail" src="img/preview.png"/>
                     </div>
+                    <!-- bulle d'images intro -->
                     <div aria-hidden="true" class="hero-sticker">
-                        <span class="lang-en" lang="en">Made of</span>
-                        <span class="lang-fr" lang="fr">N&eacute; d'</span>
+                        <span class="lang-en">Made of</span>
+                        <span class="lang-fr">Né d'</span>
                         <strong class="lang-en">ideas</strong>
-                        <strong class="lang-fr">id&eacute;es</strong>
-                        <span class="lang-en" lang="en">&amp; little detours</span>
-                        <span class="lang-fr" lang="fr">&amp; petits d&eacute;tours</span>
+                        <strong class="lang-fr">idées</strong>
+                        <span class="lang-en">&amp; little detours</span>
+                        <span class="lang-fr">&amp; petits détours</span>
                     </div>
+                    <!-- mini texte conslusion images intro -->
                     <p class="composition-caption">
                         <span class="lang-en" lang="en">Different moods. Different worlds. Always personal.</span>
                         <span class="lang-fr" lang="fr">Des humeurs, des univers, toujours personnels.</span>
                     </p>
                 </div>
             </section>
-            
+
+<!-- Bandeau conclusion intro -->
             <section aria-labelledby="statement-title" class="statement-section">
                 <div class="section-shell statement-grid">
+                    <!-- mini texte bandeau conclusion intro -->
                     <p class="eyebrow" id="statement-title">
                         <span class="eyebrow-line"></span>
                         <span class="lang-en" lang="en">No single direction</span>
                         <span class="lang-fr" lang="fr">Pas de direction unique</span>
                     </p>
+                    <!-- texte baudeau conslusion intro -->
                     <p class="statement">
-                        <span class="lang-en" lang="en">Some days, it's <em>sweet.</em> Other days, strange, dark, whimsical or unexpected. 
+                        <span class="lang-en" lang="en">Some days, it's <em>sweet.</em> Other days, <em>strange,</em> <em>dark,</em> <em>whimsical</em> or <em>unexpected.</em> 
                             <span>I like following an idea wherever it leads.</span>
                         </span>
-                        <span class="lang-fr" lang="fr">Parfois, c'est <em>tendre.</em> D'autres fois &eacute;trange, sombre, fantaisiste ou inattendu. 
+                        <span class="lang-fr" lang="fr">Parfois, c'est <em>tendre.</em> D'autres fois <em>&eacute;trange,</em> <em>sombre,</em> <em>fantaisiste</em> ou <em>inattendu.</em> 
                             <span>J'aime suivre les id&eacute;es l&agrave; o&ugrave; elles m'emm&egrave;nent.</span>
                         </span>
                     </p>
                 </div>
             </section>
 
+<!-- Présentation des univers -->
             <section aria-labelledby="collections-title" class="collections section-shell" id="collections">
                 <div class="section-heading">
                     <div>
+                        <!-- mini texte presentation univers -->
                         <p class="eyebrow">
                             <span class="eyebrow-line"></span>
                             <span class="lang-en" lang="en">A selection, not the whole story</span>
                             <span class="lang-fr" lang="fr">Une s&eacute;lection, pas toute l'histoire</span>
                         </p>
+                        <!-- titre section univers -->
                         <h2 id="collections-title">
                             <span class="lang-en" lang="en">Worlds I've<br/><em>been exploring.</em></span>
                             <span class="lang-fr" lang="fr">Des univers<br/><em>que j'explore.</em></span>
                         </h2>
                     </div>
+                    <!-- texte presentation univers -->
                     <p class="heading-aside">
                         <span class="lang-en" lang="en">Each collection begins somewhere different. These are a few places my imagination has wandered lately.</span>
                         <span class="lang-fr" lang="fr">Chaque collection part d'un point diff&eacute;rent. Voici quelques endroits o&ugrave; mon imagination s'est aventur&eacute;e r&eacute;cemment.</span>
                     </p>
                 </div>
                 <div class="collection-grid">
+                    <!-- collection 01 -->
                     <div class="collection-card">
                         <div class="collection-image">
                             <img alt="Artwork montage representing Fantasy &amp; RPG" src="img/preview.png"/>
@@ -170,6 +199,7 @@
                             <span class="collection-kind">FANTASY / RPG</span>
                         </div>
                     </div>
+                    <!-- collection 02 -->
                     <div class="collection-card">
                         <div class="collection-image">
                             <img alt="Artwork montage representing Dark Tales" src="img/preview.png"/>
@@ -179,16 +209,17 @@
                             <div>
                                 <h3>
                                     <span class="lang-en" lang="en">Dark Tales</span>
-                                    <span class="lang-fr" lang="fr">Dark Tales</span>
+                                    <span class="lang-fr" lang="fr">Contes Sombre</span>
                                 </h3>
                                 <p>
                                     <span class="lang-en" lang="en">Dark fairy tales, gothic stories, eerie worlds, twisted legends and darker imagination.</span>
-                                    <span class="lang-fr" lang="fr">Contes sombres, r&eacute;cits gothiques, univers inqui&eacute;tants, l&eacute;gendes d&eacute;form&eacute;es et imaginaire obscur.</span>
+                                    <span class="lang-fr" lang="fr">Contes de fées sombres, r&eacute;cits gothiques, univers inqui&eacute;tants, l&eacute;gendes d&eacute;form&eacute;es et imaginaire obscur.</span>
                                 </p>
                             </div>
                             <span class="collection-kind">DARK / TALES</span>
                         </div>
                     </div>
+                    <!-- collection 03 -->
                     <div class="collection-card">
                         <div class="collection-image">
                             <img alt="Artwork montage representing Chibi &amp; Cartoon" src="img/preview.png"/>
@@ -206,6 +237,7 @@
                                 <span class="collection-kind">CHIBI / CARTOON</span>
                             </div>
                         </div>
+                        <!-- collection 04 -->
                         <div class="collection-card">
                             <div class="collection-image">
                                 <img alt="Artwork montage representing Sci-Fi, Cyberpunk &amp; Steampunk" src="img/preview.png"/>
@@ -225,29 +257,12 @@
                                 <span class="collection-kind">SCI-FI / RETRO</span>
                             </div>
                         </div>
-                        <div class="collection-card">
-                            <div class="collection-image">
-                                <img alt="Artwork montage representing Cinema &amp; Parody" src="img/preview.png"/>
-                                <span class="collection-index">05</span>
-                            </div>
-                            <div class="collection-meta">
-                                <div>
-                                    <h3>
-                                        <span class="lang-en" lang="en">Cinema &amp; Parody</span>
-                                        <span class="lang-fr" lang="fr">Cin&eacute;ma et Parodie</span>
-                                    </h3>
-                                    <p>
-                                        <span class="lang-en" lang="en">Familiar pop-culture worlds, cinematic inspirations and playful reinterpretations.</span>
-                                        <span class="lang-fr" lang="fr">Univers de la pop culture, inspirations cin&eacute;matographiques et r&eacute;interpr&eacute;tations d&eacute;cal&eacute;es.</span>
-                                    </p>
-                                </div>
-                                <span class="collection-kind">POP CULTURE</span>
-                            </div>
-                        </div>
+
+                        <!-- collection 05 -->
                         <div class="collection-card">
                             <div class="collection-image">
                                 <img alt="Artwork montage representing Mythology &amp; Esoteric" src="img/preview.png"/>
-                                <span class="collection-index">06</span>
+                                <span class="collection-index">05</span>
                             </div>
                             <div class="collection-meta">
                                 <div>
@@ -263,10 +278,11 @@
                                 <span class="collection-kind">MYTH / MYSTIC</span>
                             </div>
                         </div>
+                        <!-- collection 06 -->
                         <div class="collection-card">
                             <div class="collection-image">
                                 <img alt="Artwork montage representing Seasonal &amp; Celebrations" src="img/preview.png"/>
-                                <span class="collection-index">07</span>
+                                <span class="collection-index">06</span>
                             </div>
                             <div class="collection-meta">
                                 <div>
@@ -282,10 +298,11 @@
                                 <span class="collection-kind">SEASONAL</span>
                             </div>
                         </div>
+                        <!-- collection 07 -->
                         <div class="collection-card">
                             <div class="collection-image">
                                 <img alt="Artwork montage representing Games &amp; Sports" src="img/preview.png"/>
-                                <span class="collection-index">08</span>
+                                <span class="collection-index">07</span>
                             </div>
                             <div class="collection-meta">
                                 <div>
@@ -301,10 +318,11 @@
                                 <span class="collection-kind">PLAY / SPORT</span>
                             </div>
                         </div>
+                        <!-- collection 08 -->
                         <div class="collection-card">
                             <div class="collection-image">
                                 <img alt="Artwork montage representing Creative Assets" src="img/preview.png"/>
-                                <span class="collection-index">09</span>
+                                <span class="collection-index">08</span>
                             </div>
                             <div class="collection-meta"><div>
                                 <h3>
@@ -321,10 +339,12 @@
                     </div>
                 </div>
                 <div class="collection-bottom">
+                    <!-- mini texte conclusion collections -->
                     <span>
                         <span class="lang-en" lang="en">And there will always be something else to explore.</span>
                         <span class="lang-fr" lang="fr">Et il y aura toujours autre chose &agrave; explorer.</span>
                     </span>
+                    <!-- lien vers shop esty suite conclusion univers -->
                     <a class="quiet-link" href="https://www.etsy.com/shop/AndysDigitalForge" rel="noopener noreferrer" target="_blank">
                         <span class="lang-en" lang="en">See everything on Etsy</span>
                         <span class="lang-fr" lang="fr">Tout d&eacute;couvrir sur Etsy</span>
@@ -333,24 +353,29 @@
                 </div>
             </section>
 
+<!-- Affichage de la gallerie -->
             <section aria-labelledby="gallery-title" class="carousel-section" id="gallery">
                 <div class="section-shell carousel-heading">
                     <div>
+                        <!-- mini texte presentation gallerie -->
                         <p class="eyebrow">
                             <span class="eyebrow-line"></span>
                             <span class="lang-en" lang="en">A constantly changing little gallery</span>
                             <span class="lang-fr" lang="fr">Une galerie qui ne tient pas en place</span>
                         </p>
+                        <!-- titre presentation gallerie -->
                         <h2 id="gallery-title">
                             <span class="lang-en" lang="en">A glimpse of<br/><em>what I make.</em></span>
                             <span class="lang-fr" lang="fr">Un aper&ccedil;u de<br/><em>ce que je cr&eacute;e.</em></span>
                         </h2>
                     </div>
                     <p class="heading-aside">
+                        <!-- texte presentation gallerie -->
                         <span class="lang-en" lang="en">Twenty selected pieces, arranged to move from lighter worlds into stranger, darker and more unexpected territory.</span>
                         <span class="lang-fr" lang="fr">Vingt cr&eacute;ations choisies, qui glissent progressivement des univers les plus accessibles vers des styles plus &eacute;tranges, sombres ou inattendus.</span>
                     </p>
                 </div>
+                <!-- les cliparts defilant de la gallerie -->
                 <div aria-label="Automatically scrolling gallery of twenty artworks, pauses on hover or focus" class="carousel-track-wrap">
                     <div class="carousel-track">
                         <a aria-label="Artwork 01 - open Etsy shop" class="carousel-item" href="https://www.etsy.com/shop/AndysDigitalForge" rel="noopener noreferrer" role="link" tabindex="0" target="_blank">
@@ -432,6 +457,7 @@
                             <img alt="Portfolio artwork 20" src="img/preview.png"/>
                             <span>20</span>
                         </a>
+                        <!-- numero de chaque clipart de la gallerie -->
                         <div aria-hidden="true" class="carousel-item">
                             <img alt="" src="img/preview.png"/>
                             <span>01</span>
@@ -514,6 +540,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- texte conclusion gallerie, indications interactions possibles -->
                 <p class="carousel-note section-shell">
                     <i aria-hidden="true" class="fa-solid fa-circle-info"></i>
                     <span class="lang-en" lang="en">Click any artwork to open my Etsy shop. Hover or keyboard-focus an artwork to pause the gallery.</span>
@@ -521,22 +548,27 @@
                 </p>
             </section>
             
+<!-- Explication de ma demarche -->
             <section aria-labelledby="process-title" class="process-section section-shell" id="process">
                 <div class="process-heading">
+                    <!-- mini texte de ma demarche -->
                     <p class="eyebrow">
                         <span class="eyebrow-line"></span><span class="lang-en" lang="en">The part that matters to me</span>
                         <span class="lang-fr" lang="fr">Ce qui compte dans ma d&eacute;marche</span>
                     </p>
+                    <!-- titre de ma demarche -->
                     <h2 id="process-title">
                         <span class="lang-en" lang="en">Ideas don't always<br/>come from <em>nowhere.</em></span>
                         <span class="lang-fr" lang="fr">Une id&eacute;e ne vient<br/>jamais de <em>nulle part.</em></span>
                     </h2>
+                    <!-- texte de ma demache -->
                     <p class="process-lead">
                         <span class="lang-en" lang="en">A feeling, a conversation, a subject that catches my eye... Ideas keep coming, crossing paths and branching off. I enjoy letting curiosity set the direction, even when it takes an unexpected turn.</span>
                         <span class="lang-fr" lang="fr">Une humeur, un &eacute;change, un sujet qui attire mon attention... Les id&eacute;es fusent, se croisent et partent dans plusieurs directions. J'aime laisser la curiosit&eacute; guider la suite, m&ecirc;me quand elle m'emm&egrave;ne ailleurs que pr&eacute;vu.</span>
                     </p>
                 </div>
                 <div class="process-grid">
+                    <!-- l'idee de depart -->
                     <article class="process-card">
                         <span class="process-number">01</span>
                         <img class="process-mini" src="img/preview.png" alt="" aria-hidden="true"/>
@@ -550,6 +582,7 @@
                             <span class="lang-fr" lang="fr">Tout peut partir d'une humeur, d'une pens&eacute;e, de quelque chose que j'ai vu ou d'une conversation. Ce que les gens partagent, demandent, sugg&egrave;rent ou ressentent peut m'inspirer. Les id&eacute;es ne manquent pas : elles arrivent souvent en cascade et en entra&icirc;nent d'autres. J'aime suivre ces petites &eacute;tincelles, sans les forcer.</span>
                         </p>
                     </article>
+                    <!-- l'etude de projet -->
                     <article class="process-card">
                         <span class="process-number">02</span>
                         <img class="process-mini" src="img/preview.png" alt="" aria-hidden="true"/>
@@ -559,10 +592,11 @@
                             <span class="lang-fr" lang="fr">Explorer tout un univers</span>
                         </h3>
                         <p>
-                            <span class="lang-en" lang="en">Before creating, I like to explore the subject: its history, culture, visual codes, symbols, details and unexpected corners. Sometimes I rediscover something I thought I knew. That research makes the artwork richer, and often opens the door to entirely new ideas.</span>
-                            <span class="lang-fr" lang="fr">Avant de cr&eacute;er, j'aime explorer le sujet : son histoire, sa culture, ses codes visuels, ses symboles, ses d&eacute;tails et ses recoins inattendus. Il m'arrive de red&eacute;couvrir quelque chose que je croyais conna&icirc;tre. Ces recherches enrichissent la cr&eacute;ation et ouvrent souvent la porte &agrave; de nouvelles id&eacute;es de projets.</span>
+                            <span class="lang-en" lang="en">Before creating, I like to explore the subject. Its history, culture, visual codes, symbols, details and unexpected corners. Sometimes I rediscover something I thought I knew. That research makes the artwork richer, and often opens the door to entirely new ideas.</span>
+                            <span class="lang-fr" lang="fr">Avant de cr&eacute;er, j'aime explorer le sujet. Son histoire, sa culture, ses codes visuels, ses symboles, ses d&eacute;tails et ses recoins inattendus. Il m'arrive de red&eacute;couvrir quelque chose que je croyais conna&icirc;tre. Ces recherches enrichissent la cr&eacute;ation et ouvrent souvent la porte &agrave; de nouvelles id&eacute;es de projets.</span>
                         </p>
                     </article>
+                    <!-- les tests de creation -->
                     <article class="process-card">
                         <span class="process-number">03</span>
                         <img class="process-mini" src="img/preview.png" alt="" aria-hidden="true"/>
@@ -572,44 +606,51 @@
                             <span class="lang-fr" lang="fr">Essayer, explorer, bifurquer</span>
                         </h3>
                         <p>
-                            <span class="lang-en" lang="en">I experiment, combine references, test directions and let some ideas evolve. A subject can lead somewhere completely different from where it started. Those detours are not distractions: they are often where the next project takes shape.</span>
-                            <span class="lang-fr" lang="fr">J'exp&eacute;rimente, je m&eacute;lange les r&eacute;f&eacute;rences, je teste des pistes et je laisse certaines id&eacute;es &eacute;voluer. Un sujet peut m'emmener tr&egrave;s loin de son point de d&eacute;part. Ces d&eacute;tours ne sont pas des distractions : c'est souvent l&agrave; que na&icirc;t le projet suivant.</span>
+                            <span class="lang-en" lang="en">I experiment, combine references, test directions and let some ideas evolve. A subject can lead somewhere completely different from where it started. Those detours are not distractions, they are often where the next project takes shape.</span>
+                            <span class="lang-fr" lang="fr">J'exp&eacute;rimente, je m&eacute;lange les r&eacute;f&eacute;rences, je teste des pistes et je laisse certaines id&eacute;es &eacute;voluer. Un sujet peut m'emmener tr&egrave;s loin de son point de d&eacute;part. Ces d&eacute;tours ne sont pas des distractions, c'est souvent l&agrave; que na&icirc;t le projet suivant.</span>
                         </p>
                     </article>
+                    <!-- la finition -->
                     <article class="process-card">
                         <span class="process-number">04</span>
                         <img class="process-mini" src="img/preview.png" alt="" aria-hidden="true"/>
                         <i aria-hidden="true" class="fa-solid fa-hand process-icon"></i>
                         <h3>
-                            <span class="lang-en" lang="en">The human hand behind the final image</span><span class="lang-fr" lang="fr">La main humaine derri&egrave;re l'image finale</span>
+                            <span class="lang-en" lang="en">The human hand behind the final image</span>
+                            <span class="lang-fr" lang="fr">La main humaine derri&egrave;re l'image finale</span>
                         </h3>
                         <p>
-                            <span class="lang-en" lang="en">AI can be part of the exploration, but raw output is never the finished piece. I upscale, adjust colours and contrast, improve details, remove imperfections left behind, manually cut out and clean the artwork, and make countless small corrections. I take the time to turn an image into something I am happy to share: a piece with its own finish, not simply an untouched generation.</span>
-                            <span class="lang-fr" lang="fr">L'IA peut faire partie de l'exploration, mais une image brute n'est jamais le r&eacute;sultat final. J'agrandis, ajuste les couleurs et les contrastes, am&eacute;liore les d&eacute;tails, corrige les imperfections laiss&eacute;es par la g&eacute;n&eacute;ration, d&eacute;toure et nettoie manuellement l'image, puis apporte quantit&eacute; de petites retouches. Je prends le temps de transformer l'image pour obtenir un r&eacute;sultat que je suis fier de partager : une cr&eacute;ation avec sa propre finition, pas simplement une g&eacute;n&eacute;ration laiss&eacute;e telle quelle.</span>
+                            <span class="lang-en" lang="en">AI can be part of the exploration, but raw output is never the finished piece. I upscale, adjust colours and contrast, improve details, remove imperfections left behind, manually cut out and clean the artwork, and make countless small corrections. I take the time to turn an image into something I am happy to share. A piece with its own finish, not simply an untouched generation.</span>
+                            <span class="lang-fr" lang="fr">L'IA peut faire partie de l'exploration, mais une image brute n'est jamais le r&eacute;sultat final. J'agrandis, ajuste les couleurs et les contrastes, am&eacute;liore les d&eacute;tails, corrige les imperfections laiss&eacute;es par la g&eacute;n&eacute;ration, d&eacute;toure et nettoie manuellement l'image, puis apporte quantit&eacute; de petites retouches. Je prends le temps de transformer l'image pour obtenir un r&eacute;sultat que je suis fier de partager. Une cr&eacute;ation avec sa propre finition, pas simplement une g&eacute;n&eacute;ration laiss&eacute;e telle quelle.</span>
                         </p>
                     </article>
                 </div>
             </section>
 
+<!-- A propos -->
             <section aria-labelledby="about-title" class="about-section" id="about">
                 <div class="section-shell about-grid">
                     <div class="about-image">
                         <img alt="A closer look at an illustration" src="img/preview.png"/>
+                        <!-- mini texte a propos image -->
                         <span class="about-image-caption">
                             <span class="lang-en" lang="en">A work in progress, always</span>
                             <span class="lang-fr" lang="fr">Toujours en cours d'exploration</span>
                         </span>
                     </div>
                     <div class="about-copy">
+                        <!-- mini texte intro a propos -->
                         <p class="eyebrow">
                             <span class="eyebrow-line"></span>
                             <span class="lang-en" lang="en">Behind AndysDigitalForge</span>
                             <span class="lang-fr" lang="fr">Derri&egrave;re AndysDigitalForge</span>
                         </p>
+                        <!-- titre a propos -->
                         <h2 id="about-title">
                             <span class="lang-en" lang="en">Not a studio.<br/><em>Just me, making things.</em></span>
                             <span class="lang-fr" lang="fr">Pas un studio.<br/><em>Juste moi, qui cr&eacute;e.</em></span>
                         </h2>
+                        <!-- texte a propos -->
                         <p>
                             <span class="lang-en" lang="en">AndysDigitalForge is my personal creative space, built alongside everyday life. It reflects the things that catch my attention, the moods I move through, the subjects I discover and the ideas that refuse to stay still.</span>
                             <span class="lang-fr" lang="fr">AndysDigitalForge est mon espace cr&eacute;atif personnel, que je fais vivre &agrave; c&ocirc;t&eacute; de mon quotidien. Il refl&egrave;te ce qui attire mon attention, les humeurs qui me traversent, les sujets que je d&eacute;couvre et les id&eacute;es qui refusent de rester en place.</span>
@@ -622,10 +663,12 @@
                             <span class="lang-en" lang="en">I'm one person behind the screen. Every collection is another little journey, and I hope some of that curiosity finds its way to you.</span>
                             <span class="lang-fr" lang="fr">Je suis seul derri&egrave;re l'&eacute;cran. Chaque collection est un petit voyage de plus, et j'esp&egrave;re qu'une part de cette curiosit&eacute; trouvera son chemin jusqu'&agrave; vous.</span>
                         </p>
+                        <!-- slogan -->
                         <p class="about-legendary">
                             <span class="lang-en" lang="en">May your days be legendary.</span>
                             <span class="lang-fr" lang="fr">Que vos journ&eacute;es soient l&eacute;gendaires.</span>
                         </p>
+                        <!-- signature -->
                         <div class="signature">Andy 
                             <span>AndysDigitalForge</span>
                         </div>
@@ -633,22 +676,27 @@
                 </div>
             </section>
             
+<!-- Contact -->
             <section aria-labelledby="contact-title" class="contact-section section-shell" id="contact">
                 <div class="contact-copy">
+                    <!-- mini intro contact -->
                     <p class="eyebrow">
                         <span class="eyebrow-line"></span>
                         <span class="lang-en" lang="en">Say hello</span>
                         <span class="lang-fr" lang="fr">Faire connaissance</span>
                     </p>
+                    <!-- titre contact -->
                     <h2 id="contact-title">
                         <span class="lang-en" lang="en">The best ideas<br/>sometimes start with<br/><em>a conversation.</em></span>
                         <span class="lang-fr" lang="fr">Les plus belles id&eacute;es<br/>commencent parfois<br/><em>par un &eacute;change.</em></span>
                     </h2>
+                    <!-- texte contact -->
                     <p>
                         <span class="lang-en" lang="en">A question, an idea, a suggestion, a kind word or simply a hello. I enjoy hearing from the people who find their way here.</span>
                         <span class="lang-fr" lang="fr">Une question, une id&eacute;e, une suggestion, un mot gentil ou simplement un bonjour. J'aime &eacute;changer avec les personnes qui passent par ici.</span>
                     </p>
                 </div>
+                <!-- telephone -->
                 <div class="contact-links">
                     <a class="contact-link" href="tel:+33633086286">
                         <span class="contact-icon">
@@ -663,6 +711,7 @@
                         </span>
                         <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
                     </a>
+                    <!-- WhatsApp -->
                     <a class="contact-link" href="https://wa.me/33633086286" rel="noopener noreferrer" target="_blank">
                         <span class="contact-icon">
                             <i aria-hidden="true" class="fa-brands fa-whatsapp"></i>
@@ -676,6 +725,7 @@
                         </span>
                         <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
                     </a>
+                    <!-- mail -->
                     <a class="contact-link" href="mailto:andysdigitalforge@gmail.com">
                         <span class="contact-icon"><i aria-hidden="true" class="fa-regular fa-envelope"></i>
                         </span>
@@ -685,6 +735,7 @@
                         </span>
                         <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
                     </a>
+                    <!-- lien vers mon shop Etsy contaxct -->
                     <a class="contact-link" href="https://www.etsy.com/shop/AndysDigitalForge" rel="noopener noreferrer" target="_blank">
                         <span class="contact-icon">
                             <i aria-hidden="true" class="fa-brands fa-etsy"></i>
@@ -701,29 +752,40 @@
                 </div>
             </section>
         </main>
+
+<!-- footer brut -->
         <footer class="site-footer section-shell">
+            <!-- logo footer -->
             <a class="brand footer-brand" href="#top">
                 <img alt="" class="brand-logo" src="img/logo.png"/>
                 <span>AndysDigitalForge</span>
             </a>
+            <!-- texte de conclusion footer -->
             <p>
                 <span class="lang-en" lang="en">A personal creative space, fueled by an endless stream of ideas.</span>
                 <span class="lang-fr" lang="fr">Un espace cr&eacute;atif personnel, nourri par un flot d'id&eacute;es.</span>
             </p>
+            <!-- site cree par AndysDigitalForge -->
             <div class="footer-bottom">
                 <span>&copy; 2026 AndysDigitalForge</span>
             </div>
         </footer>
+
+<!-- footer static avec bouton cta -->
         <nav aria-label="Contact shortcuts" class="footer-contact-dock">
+            <!-- telephone footer -->
             <a aria-label="Phone / T&eacute;l&eacute;phone" href="tel:+33633086286" title="Phone / T&eacute;l&eacute;phone">
                 <i aria-hidden="true" class="fa-solid fa-phone"></i>
             </a>
+            <!-- WhatsApp footer -->
             <a aria-label="WhatsApp" href="https://wa.me/33633086286" rel="noopener noreferrer" target="_blank" title="WhatsApp">
                 <i aria-hidden="true" class="fa-brands fa-whatsapp"></i>
             </a>
+            <!-- mail footer -->
             <a aria-label="Email" href="mailto:andysdigitalforge@gmail.com" title="Email">
                 <i aria-hidden="true" class="fa-regular fa-envelope"></i>
             </a>
+            <!-- liens vers mon shop esty footer -->
             <a aria-label="Etsy" href="https://www.etsy.com/shop/AndysDigitalForge" rel="noopener noreferrer" target="_blank" title="Etsy">
                 <i aria-hidden="true" class="fa-brands fa-etsy"></i>
             </a>
