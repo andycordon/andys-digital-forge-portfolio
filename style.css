@@ -151,6 +151,63 @@ h2 em,
     outline-offset: 4px;
 }
 
+/* ==========================================================
+   ABOUT - SIGNATURE & PORTRAIT
+   ========================================================== */
+
+.about-signature-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    margin-top: 32px;
+}
+
+.about-signature-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Portrait */
+
+.about-portrait {
+    flex-shrink: 0;
+}
+
+.about-portrait-frame {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ff9b45;
+    background: var(--bg-card);
+
+    box-shadow:
+        0 0 0 5px rgba(255, 155, 69, .04),
+        0 10px 30px rgba(0, 0, 0, .25);
+}
+
+.about-portrait-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    filter: saturate(.85);
+
+    transition:
+        filter .4s ease,
+        transform .4s ease;
+}
+
+.about-portrait-frame:hover img {
+    filter: saturate(1);
+    transform: scale(1.05);
+}
+
 
 /* ==========================================================
    03. HEADER & NAVIGATION
@@ -1537,6 +1594,18 @@ body:has(#lang-fr:checked) .lang-fr {
         font-size: .82em;
     }
 
+    @media (max-width: 780px) {
+
+    .about-signature-block {
+        gap: 20px;
+    }
+
+    .about-portrait-frame {
+        width: 120px;
+        height: 120px;
+    }
+
+}
 
     /* Mobile menu */
 
