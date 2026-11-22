@@ -617,12 +617,14 @@ h2 em,
 
 .collection-image {
     aspect-ratio: 1 / 1;
-    overflow: visible;
+    overflow: hidden;
     position: relative;
     isolation: isolate;
     background: var(--bg-card);
     border: 1px solid var(--line);
 }
+
+/* Image */
 
 .collection-image img {
     width: 100%;
@@ -633,32 +635,62 @@ h2 em,
     position: relative;
     z-index: 2;
 
-    transform-origin: center center;
+    transform: none;
 
     transition:
-        transform .42s ease,
-        filter .42s ease,
-        box-shadow .42s ease;
+        filter .42s ease;
+}
+
+/* Shine effect */
+
+.collection-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    pointer-events: none;
+
+    background: linear-gradient(
+        115deg,
+        transparent 35%,
+        rgba(255, 255, 255, .08) 42%,
+        rgba(255, 255, 255, .35) 50%,
+        rgba(255, 255, 255, .08) 58%,
+        transparent 65%
+    );
+
+    transform: translateX(-150%);
+    transition: transform .8s cubic-bezier(.2, .65, .3, 1);
+}
+
+/* Hover / Focus */
+
+.collection-card:hover .collection-image::after,
+.collection-card:focus-visible .collection-image::after {
+    transform: translateX(150%);
 }
 
 .collection-card:hover .collection-image img,
 .collection-card:focus-visible .collection-image img {
-    transform: scale(1.25);
-    filter: brightness(1.05);
-    box-shadow: 0 24px 52px rgba(0, 0, 0, .5);
+    transform: none;
+    filter: brightness(1.04);
 }
+
+/* Collection index */
 
 .collection-index {
     position: absolute;
     bottom: 14px;
     left: 16px;
-    z-index: 3;
+    z-index: 4;
 
     font-size: .8rem;
     letter-spacing: .08em;
     color: rgba(255, 255, 255, .8);
     text-shadow: 0 1px 5px rgba(0, 0, 0, .5);
 }
+
+/* Collection link icon */
 
 .collection-link-icon {
     display: none !important;
@@ -1689,11 +1721,6 @@ body:has(#lang-fr:checked) .lang-fr {
         aspect-ratio: 1 / 1;
     }
 
-    .collection-card:hover .collection-image img,
-    .collection-card:focus-visible .collection-image img {
-        transform: scale(1.25);
-    }
-
     .collection-meta {
         flex-direction: column;
         gap: 7px;
@@ -1778,29 +1805,29 @@ body:has(#lang-fr:checked) .lang-fr {
 
     .process-card:nth-child(1) .process-mini {
         width: 75px;
-        right: 90px;
-        top : 40px;
+        right: 10px;
+        top : 30px;
         transform: rotate(-7deg);
     }
 
     .process-card:nth-child(2) .process-mini {
         width: 75px;
-        right: 100px;
-        top: 37px;
+        right: 10px;
+        top: 30px;
         transform: rotate(6deg);
     }
 
     .process-card:nth-child(3) .process-mini {
         width: 75px;
-        right: 125px;
+        right: 10px;
         top: 30px;
         transform: rotate(-6deg);
     }
 
     .process-card:nth-child(4) .process-mini {
         width: 75px;
-        right: 80px;
-        top: 35px;
+        right: 10px;
+        top: 30px;
         transform: rotate(7deg);
     }
 
